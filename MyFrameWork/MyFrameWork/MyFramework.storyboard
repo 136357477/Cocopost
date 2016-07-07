@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--My Frame Work View Controller-->
+        <scene sceneID="ktd-MN-VqO">
+            <objects>
+                <viewController storyboardIdentifier="MyFrameWorkViewController" id="RHY-wy-GKg" customClass="MyFrameWorkViewController" customModule="MyFrameWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FlO-lT-kXJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="7B4-L6-WQh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bBw-OM-csJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UV2-kB-SaY">
+                                <rect key="frame" x="270" y="285" width="60" height="30"/>
+                                <state key="normal" title="点我关闭"/>
+                                <connections>
+                                    <action selector="close:" destination="RHY-wy-GKg" eventType="touchUpInside" id="IRg-z6-Gzo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UV2-kB-SaY" firstAttribute="centerX" secondItem="bBw-OM-csJ" secondAttribute="centerX" id="C89-oK-dYG"/>
+                            <constraint firstItem="UV2-kB-SaY" firstAttribute="centerY" secondItem="bBw-OM-csJ" secondAttribute="centerY" id="MWv-xT-FtD"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="As2-ef-YH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="223" y="481"/>
+        </scene>
+    </scenes>
+</document>

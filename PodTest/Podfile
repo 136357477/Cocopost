@@ -1,0 +1,16 @@
+# ‘#’ 代表注释
+# Uncomment this line to define a global platform for your project
+platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# 使用的是swift 把use_frameworks! , pod 生成的库都是以动态库的形式引入 , 若无此参数 则添加为静态库 , pod 中有 swift 必须使用use_frameworks! , swift 库不支持以静态库引入 ,好处:动态库 加入内存中 可以随时调用
+use_frameworks!
+# 压制所有pods 警告
+inhibit_all_warnings!
+# 为PodTest 创建workspace 
+target 'PodTest' do
+
+    pod 'Alamofire', '~> 3.4.0'
+    pod 'MyFramework',:git => "https://github.com/136357477/MyFramework.git"
+
+end
+

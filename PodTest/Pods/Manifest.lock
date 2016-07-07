@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (3.4.1)
+  - MyFramework (0.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.4.0)
+  - MyFramework (from `https://github.com/136357477/MyFramework.git`)
+
+EXTERNAL SOURCES:
+  MyFramework:
+    :git: https://github.com/136357477/MyFramework.git
+
+CHECKOUT OPTIONS:
+  MyFramework:
+    :commit: de12d5e4187fbb6aa3d05c6bdec4abe3c83f4616
+    :git: https://github.com/136357477/MyFramework.git
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  MyFramework: ca107837ffc3cd580dcf10e0e2c007ad18fd39c5
+
+COCOAPODS: 0.39.0
